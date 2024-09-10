@@ -19,8 +19,8 @@ public class AuthService {
         try {
             ObjectMapper mapper = new ObjectMapper();
 //            mapper.writeValueAsString(user);
-            return authenticationClient.register(mapper.writeValueAsString(user));
-
+//            return authenticationClient.register(mapper.writeValueAsString(user));
+            throw new UnsupportedOperationException("Not supported yet.");
         } catch (Exception e) {
             System.out.println(e.getMessage());
             return null;

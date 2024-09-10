@@ -13,7 +13,7 @@ public interface AuthenticationClient {
 
     @POST
     @Path("/register")
-    UserDTO register(String userDTO);
+    UserDTO register(UserDTO userDTO);
 
     @POST
     @Path("/login")
