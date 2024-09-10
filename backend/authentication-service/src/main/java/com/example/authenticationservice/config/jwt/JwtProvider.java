@@ -7,12 +7,14 @@ import io.jsonwebtoken.security.Keys;
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
 import java.util.Base64;
 import java.util.Date;
 import java.util.stream.Collectors;
 
+@Component
 public class JwtProvider {
 
     @Value("${jwt.secret}")
