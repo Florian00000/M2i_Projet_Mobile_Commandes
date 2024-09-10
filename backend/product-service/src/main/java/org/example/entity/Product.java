@@ -2,15 +2,13 @@ package org.example.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
 @Entity
-@Data
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -27,7 +25,13 @@ public class Product {
     private double price;
 
 
-    @ManyToMany(mappedBy = "products", fetch = FetchType.EAGER)
+
+    @ManyToMany(cascade = {CascadeType.DETACH}, fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "category_product",
+            joinColumns = { @JoinColumn(name = "product_id")},
+            inverseJoinColumns = { @JoinColumn(name = "category_id")}
+    )
     @JsonIgnore
     private List<Category> categories;
 }
