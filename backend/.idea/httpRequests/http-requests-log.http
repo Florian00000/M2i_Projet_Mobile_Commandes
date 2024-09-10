@@ -1,0 +1,235 @@
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 52
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "test2@test.fr",
+  "password": "123456"
+}
+
+<> 2024-09-10T135503.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 52
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "test2@test.fr",
+  "password": "123456"
+}
+
+<> 2024-09-10T135454.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "test2@test.fr",
+  "password": "123456"
+}
+
+<> 2024-09-10T134853.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "test2@test.fr",
+  "password": "123456"
+}
+
+<> 2024-09-10T134850.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "test2@test.fr",
+  "password": "123456"
+}
+
+<> 2024-09-10T134747.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "test2@test.fr",
+  "password": "123456"
+}
+
+<> 2024-09-10T134544.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "test2@test.fr",
+  "password": "123456"
+}
+
+<> 2024-09-10T134542.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "test2@test.fr",
+  "password": "123456"
+}
+
+<> 2024-09-10T134541.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 52
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "test2@test.fr",
+  "password": "123456"
+}
+
+<> 2024-09-10T134237.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 52
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"email": "test2@test.fr",
+  "password": "123456"
+}
+
+<> 2024-09-10T134231.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "test2@test.fr",
+  "password": "123456"
+}
+
+<> 2024-09-10T133834.500.json
+
+###
+
+POST http://localhost:8081/api/auth/register
+Content-Type: application/json
+Content-Length: 116
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 0,
+  "firstname": "",
+  "lastname": "",
+  "email": "test@test.fr",
+  "password": "123456",
+  "roles": []
+}
+
+<> 2024-09-10T133740.201.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 129
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstname": "test",
+  "lastname": "test",
+  "email": "test@test.fr",
+  "password": "123456",
+  "roles": [{"role": "USER"}]
+}
+
+<> 2024-09-10T123036.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 141
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 0,
+  "firstname": "Toto",
+  "lastname": "Tata",
+  "email": "toto@mail.com",
+  "password": "123456",
+  "roles": [{"role": "USER"}]
+}
+
+<> 2024-09-10T121801.500.json
+
+###
+

@@ -1,5 +1,6 @@
 package com.example.authenticationservice.resource;
 
+import com.example.authenticationservice.dto.UserDTO;
 import com.example.authenticationservice.entity.User;
 import com.example.authenticationservice.service.UserService;
 import org.springframework.http.HttpStatus;
@@ -23,7 +24,8 @@ public class AuthenticationResource {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<User> register(@RequestBody User user) {
+    public ResponseEntity<UserDTO> register(@RequestBody UserDTO user) {
+//        System.out.println(user.getUsername());
         return new ResponseEntity<>(userService.createUser(user), HttpStatus.CREATED);
     }
 

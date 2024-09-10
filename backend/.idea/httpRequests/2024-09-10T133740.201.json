@@ -1,0 +1,12 @@
+{
+  "id": 3,
+  "firstname": "",
+  "lastname": "",
+  "email": "test@test.fr",
+  "authorities": [],
+  "username": "test@test.fr",
+  "enabled": true,
+  "credentialsNonExpired": true,
+  "accountNonExpired": true,
+  "accountNonLocked": true
+}

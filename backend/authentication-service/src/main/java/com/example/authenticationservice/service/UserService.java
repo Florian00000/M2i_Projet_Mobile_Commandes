@@ -1,6 +1,7 @@
 package com.example.authenticationservice.service;
 
 import com.example.authenticationservice.config.jwt.JwtProvider;
+import com.example.authenticationservice.dto.UserDTO;
 import com.example.authenticationservice.entity.Role;
 import com.example.authenticationservice.entity.User;
 import com.example.authenticationservice.repository.RoleRepository;
@@ -17,6 +18,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -59,15 +61,34 @@ public class UserService implements UserDetailsService {
                 .orElseThrow(() -> new BadCredentialsException("Invalid email or password"));
     }
 
-    public User createUser(User user) {
+    public UserDTO createUser(UserDTO userDTO) {
+        User user = User.builder()
+                .firstname(userDTO.getFirstname())
+                .lastname(userDTO.getLastname())
+                .email(userDTO.getEmail())
+                .password(userDTO.getPassword())
+                .build();
         try {
             user.setPassword(passwordEncoder.encode(user.getPassword()));
-            List<Role> roles = user.getRoles().stream()
-                    .map(r -> roleRepository.findByRole(r.getRole())
-                            .orElse(r)).toList();
-            user.setRoles(roles);
-            return userRepository.save(user);
+            if ( user.getRoles() != null) {
+                List<Role> roles = user.getRoles().stream()
+                        .map(r -> roleRepository.findByRole(r.getRole())
+                                .orElse(r)).toList();
+                user.setRoles(roles);
+            } else {
+                user.setRoles(List.of(roleRepository.findByRole("USER").get()));
+            }
+            userRepository.save(user);
+            UserDTO registeredUser = new UserDTO();
+            registeredUser.setEmail(user.getEmail());
+            registeredUser.setFirstname(user.getFirstname());
+            registeredUser.setLastname(user.getLastname());
+            registeredUser.setId(user.getId());
+//            return userRepository.save(user);
+            return registeredUser;
         } catch (Exception e) {
+            System.out.println(e.getMessage());
+            System.out.println(e.getStackTrace());
             throw new BadCredentialsException("Invalid email or password");
         }
     }
