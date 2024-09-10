@@ -1,10 +1,13 @@
 package org.example.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Entity
 @Data
@@ -15,6 +18,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "product_id")
     private long id;
 
     private String name;
@@ -22,8 +26,8 @@ public class Product {
     private String description;
     private double price;
 
-    //TODO voir si relation Many to many ou 2 service
-//    @ManyToOne
-//    @JoinColumn(name = "category_id")
-//    private Category category;
+
+    @ManyToMany(mappedBy = "products")
+    @JsonIgnore
+    private List<Category> categories;
 }
