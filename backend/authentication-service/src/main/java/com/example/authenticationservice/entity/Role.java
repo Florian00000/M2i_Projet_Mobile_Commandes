@@ -2,13 +2,14 @@ package com.example.authenticationservice.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
+@Setter @Getter
 @Entity @Table(name = "role")
 public class Role implements GrantedAuthority {
 

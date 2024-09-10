@@ -1,5 +1,7 @@
 package com.example.authenticationservice.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,16 +20,19 @@ import java.util.List;
 public class User implements UserDetails {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Integer id;
     private String firstname;
     private String lastname;
     @Column(unique = true, nullable = false)
     private String email;
     @Column(nullable = false)
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
     @JoinTable(name = "account_role")
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private List<Role> roles;
 
 
