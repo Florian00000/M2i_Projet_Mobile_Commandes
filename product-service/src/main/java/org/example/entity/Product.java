@@ -27,7 +27,7 @@ public class Product {
     private double price;
 
 
-    @ManyToMany(mappedBy = "products")
+    @ManyToMany(mappedBy = "products", fetch = FetchType.EAGER)
     @JsonIgnore
     private List<Category> categories;
 }

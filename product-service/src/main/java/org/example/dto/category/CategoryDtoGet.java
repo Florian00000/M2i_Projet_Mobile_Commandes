@@ -4,6 +4,7 @@ import lombok.Data;
 import org.example.entity.Category;
 import org.example.entity.Product;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -17,6 +18,6 @@ public class CategoryDtoGet {
     public CategoryDtoGet(Category category) {
         this.id = category.getId();
         this.name = category.getName();
-        this.products = category.getProducts();
+        this.products = category.getProducts() != null? category.getProducts() : new ArrayList<>();
     }
 }
