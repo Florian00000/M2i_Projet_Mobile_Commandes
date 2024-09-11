@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
         <module name="product-service" />
+        <module name="authentication-service" />
       </profile>
     </annotationProcessing>
   </component>
