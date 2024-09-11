@@ -1,235 +1,505 @@
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 52
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
+content-length: 0
 
-{
-"email": "test2@test.fr",
-  "password": "123456"
-}
-
-<> 2024-09-10T135503.500.json
+<> 2024-09-11T114244.403.json
 
 ###
 
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 52
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
-
-{
-"email": "test2@test.fr",
-  "password": "123456"
-}
-
-<> 2024-09-10T135454.500.json
+content-length: 0
 
 ###
 
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 54
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
-
-{
-  "email": "test2@test.fr",
-  "password": "123456"
-}
-
-<> 2024-09-10T134853.500.json
+content-length: 0
 
 ###
 
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 54
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
-
-{
-  "email": "test2@test.fr",
-  "password": "123456"
-}
-
-<> 2024-09-10T134850.500.json
+content-length: 0
 
 ###
 
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 54
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
-
-{
-  "email": "test2@test.fr",
-  "password": "123456"
-}
-
-<> 2024-09-10T134747.500.json
+content-length: 0
 
 ###
 
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 54
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
-
-{
-  "email": "test2@test.fr",
-  "password": "123456"
-}
-
-<> 2024-09-10T134544.500.json
+content-length: 0
 
 ###
 
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 54
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
-
-{
-  "email": "test2@test.fr",
-  "password": "123456"
-}
-
-<> 2024-09-10T134542.500.json
+content-length: 0
 
 ###
 
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 54
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
-
-{
-  "email": "test2@test.fr",
-  "password": "123456"
-}
-
-<> 2024-09-10T134541.500.json
+content-length: 0
 
 ###
 
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 52
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
-
-{
-"email": "test2@test.fr",
-  "password": "123456"
-}
-
-<> 2024-09-10T134237.500.json
+content-length: 0
 
 ###
 
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 52
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
-
-{
-"email": "test2@test.fr",
-  "password": "123456"
-}
-
-<> 2024-09-10T134231.500.json
+content-length: 0
 
 ###
 
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 54
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
+content-length: 0
 
-{
-  "email": "test2@test.fr",
-  "password": "123456"
-}
-
-<> 2024-09-10T133834.500.json
+<> 2024-09-11T113753.500.json
 
 ###
 
-POST http://localhost:8081/api/auth/register
-Content-Type: application/json
-Content-Length: 116
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
+content-length: 0
 
-{
-  "id": 0,
-  "firstname": "",
-  "lastname": "",
-  "email": "test@test.fr",
-  "password": "123456",
-  "roles": []
-}
-
-<> 2024-09-10T133740.201.json
+<> 2024-09-11T113706.500.html
 
 ###
 
-POST http://localhost:8080/api/auth/login
-Content-Type: application/json
-Content-Length: 129
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
+content-length: 0
 
-{
-  "firstname": "test",
-  "lastname": "test",
-  "email": "test@test.fr",
-  "password": "123456",
-  "roles": [{"role": "USER"}]
-}
-
-<> 2024-09-10T123036.500.json
+<> 2024-09-11T113705.500.html
 
 ###
 
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 141
+GET http://localhost:8080/api/test/authenticated
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
+content-length: 0
 
-{
-  "id": 0,
-  "firstname": "Toto",
-  "lastname": "Tata",
-  "email": "toto@mail.com",
-  "password": "123456",
-  "roles": [{"role": "USER"}]
-}
+<> 2024-09-11T113109.500.json
 
-<> 2024-09-10T121801.500.json
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112845.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112843.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112841.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112615.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112614.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112612.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112316-1.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112316.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112315.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112314.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112258.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112257.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112248.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112247.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112244.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112243.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112242.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112235.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112234.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112232.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112231.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112229.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112217.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112214.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112207.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYWJpdGJvbEBtYWlsLmNvbSIsInJvbGVzIjoiQURNSU4sVVNFUiIsImlhdCI6MTcyNjA0NjQ5NSwiZXhwIjoxNzI2MTMyODk1fQ.LnhATafhoCsBvvZ5exnH5-s_VbGUk7CyrScVHs7d9ldhaf49hHojD9sGvjX8_x9pJ9viJdAg0C76VAZld24CFA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112205.200.json
+
+###
+
+GET http://localhost:8080/api/test/not-authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112016.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T112006.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T111952.500.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T111645.500.html
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T111643.500.html
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T111612.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T111609.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: helloworld
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T111101.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: helloworld
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T111100.200.json
+
+###
+
+GET http://localhost:8080/api/test/authenticated
+Authorization: helloworld
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-11T111058.200.json
 
 ###
 
