@@ -8,7 +8,7 @@ import org.example.dto.product.ProductDtoGet;
 import org.example.dto.product.ProductDtoPost;
 import org.example.service.ProductService;
 
-@Path("/api/product")
+@Path("/api/products")
 @Produces(MediaType.APPLICATION_JSON)
 public class ProductResource {
 

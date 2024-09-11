@@ -6,7 +6,7 @@ import jakarta.ws.rs.PathParam;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 import org.example.dto.product.ProductDto;
 
-@Path("/api/product")
+@Path("/api/products")
 @RegisterRestClient(configKey = "product_service")
 public interface ProductServiceClient {
 

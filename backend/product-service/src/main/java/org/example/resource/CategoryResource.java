@@ -8,7 +8,7 @@ import org.example.dto.category.CategoryDtoGet;
 import org.example.dto.category.CategoryDtoPost;
 import org.example.service.CategoryService;
 
-@Path("/api/category")
+@Path("/api/categories")
 @Produces(MediaType.APPLICATION_JSON)
 public class CategoryResource {
 
