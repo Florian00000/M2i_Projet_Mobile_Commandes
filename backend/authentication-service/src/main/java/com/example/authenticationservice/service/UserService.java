@@ -62,12 +62,20 @@ public class UserService implements UserDetailsService {
     public User createUser(User user) {
         try {
             user.setPassword(passwordEncoder.encode(user.getPassword()));
-            List<Role> roles = user.getRoles().stream()
-                    .map(r -> roleRepository.findByRole(r.getRole())
-                            .orElse(r)).toList();
-            user.setRoles(roles);
+            if ( user.getRoles() != null) {
+                List<Role> roles = user.getRoles().stream()
+                        .map(r -> roleRepository.findByRole(r.getRole())
+                                .orElse(r)).toList();
+                user.setRoles(roles);
+            } else {
+//                System.out.println(roleRepository.findByRole("USER").orElse(Role.builder().role("test").build()));
+                user.setRoles(List.of(roleRepository.findByRole("USER").orElse(
+                        Role.builder().role("USER").build()
+                )));
+            }
             return userRepository.save(user);
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             throw new BadCredentialsException("Invalid email or password");
         }
     }
