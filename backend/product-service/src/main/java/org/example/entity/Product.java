@@ -26,7 +26,7 @@ public class Product {
 
 
 
-    @ManyToMany(cascade = {CascadeType.DETACH}, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = {CascadeType.ALL}, fetch = FetchType.EAGER)
     @JoinTable(
             name = "category_product",
             joinColumns = { @JoinColumn(name = "product_id")},
@@ -34,4 +34,5 @@ public class Product {
     )
     @JsonIgnore
     private List<Category> categories;
+
 }

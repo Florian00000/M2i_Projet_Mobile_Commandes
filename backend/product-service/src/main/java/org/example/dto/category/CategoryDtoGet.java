@@ -1,8 +1,8 @@
 package org.example.dto.category;
 
 import lombok.Data;
+import org.example.dto.product.ProductDtoGetForCategory;
 import org.example.entity.Category;
-import org.example.entity.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +13,13 @@ public class CategoryDtoGet {
     private long id;
     private String name;
 
-    private List<Product> products;
+    private List<ProductDtoGetForCategory> products;
 
     public CategoryDtoGet(Category category) {
         this.id = category.getId();
         this.name = category.getName();
-        this.products = category.getProducts() != null? category.getProducts() : new ArrayList<>();
+        this.products = category.getProducts() != null?
+                category.getProducts().stream().map(ProductDtoGetForCategory::new).toList()
+                : new ArrayList<>();
     }
 }

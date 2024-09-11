@@ -8,7 +8,6 @@ import org.example.dto.category.CategoryDtoPost;
 import org.example.entity.Category;
 import org.example.repository.CategoryRepository;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
