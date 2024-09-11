@@ -1,6 +1,6 @@
-package com.example.client;
+package com.example.client.authentication;
 
-import com.example.dto.UserDTO;
+import com.example.dto.authdto.UserDTO;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;

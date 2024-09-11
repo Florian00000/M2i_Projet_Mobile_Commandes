@@ -1,4 +1,4 @@
-package com.example.client;
+package com.example.client.authentication;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.HeaderParam;

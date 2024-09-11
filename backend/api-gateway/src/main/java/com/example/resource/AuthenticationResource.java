@@ -1,7 +1,7 @@
 package com.example.resource;
 
-import com.example.client.AuthenticationClient;
-import com.example.dto.UserDTO;
+import com.example.client.authentication.AuthenticationClient;
+import com.example.dto.authdto.UserDTO;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;

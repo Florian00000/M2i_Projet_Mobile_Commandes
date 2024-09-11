@@ -1,6 +1,6 @@
 package com.example.filter;
 
-import com.example.client.TokenValidationClient;
+import com.example.client.authentication.TokenValidationClient;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.ForbiddenException;
