@@ -72,7 +72,7 @@ public class ProductResource {
                 return Response.ok(productDtoGet).build();
             }else return Response.status(Response.Status.NOT_FOUND).build();
         } catch (RuntimeException e) {
-            return Response.status(Response.Status.BAD_REQUEST)..build();
+            return Response.status(Response.Status.BAD_REQUEST).build();
         }
 
 
