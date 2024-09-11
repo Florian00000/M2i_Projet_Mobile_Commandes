@@ -33,7 +33,7 @@ services:
     ports:
       - "3030:80"
     environment:
-      PMA_HOST: db_ms_library
+      PMA_HOST: db_ms_e_shop
     networks:
       - ms_e_shop_network
 
@@ -47,9 +47,11 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://db_ms_e_shop/db_ms_authentication_service
       SPRING_JPA_HIBERNATE_DDL_AUTO: validate
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_HIKARI_PASSWORD: root
       SERVER_PORT: 8081
-    ports:
-      - "8081:8081"
+#    ports:
+#      - "8081:8081"
     networks:
       - ms_e_shop_network
 
@@ -63,9 +65,11 @@ services:
     environment:
       QUARKUS_DATASOURCE_JDBC_URL: jdbc:mysql://db_ms_e_shop/db_ms_product_service
       QUARKUS_HIBERNATE_ORM_DATABASE_GENERATION: validate
+      USERNAME_MYSQL: root
+      PASSWORD_MYSQL: root
       QUARKUS_HTTP_PORT: 8082
-    ports:
-      - "8082:8082"
+#    ports:
+#      - "8082:8082"
     networks:
       - ms_e_shop_network
 
