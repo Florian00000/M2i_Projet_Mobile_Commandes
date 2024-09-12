@@ -34,37 +34,30 @@ public class OrderService {
 
     public Order addOrder(OrderDtoPost orderDtoPost) {
         Order order = toOrder(orderDtoPost);
-        for (ProductOrderDtoPost productOrderDtoPost : orderDtoPost.getProducts()){
-            try {
-                productServiceClient.getProductById(productOrderDtoPost.getProductId());
-
-            }catch (Exception e){
-                throw new BadRequestException(e.getMessage(), Response.status(Response.Status.BAD_REQUEST)
-                        .entity("{\"error\":\"Product Not found\"}").build());
-            }
-            if (productOrderDtoPost.getQuantity() >
-                    productServiceClient.getProductById(productOrderDtoPost.getProductId()).getStock()){
-                throw new BadRequestException("", Response.status(Response.Status.BAD_REQUEST)
-                        .entity("{\"error\":\"Quantity are not available\"}").build());
-            }
-            ProductOrder productOrder = productOrderDtoPost.toProductOrder();
-            productOrder.setProductName(productServiceClient.getProductById(productOrderDtoPost.getProductId()).getName());
-            productOrderRepository.persist(productOrder);
-            order.addProduct(productOrder.id);
-        }
+        enrichOrderWithProducts(order, orderDtoPost);
         orderRepository.persist(order);
         return order;
     }
 
-    //TODO Changer statut / Modifier commande si non envoyé/ annuler commande
+    public Order updateOrder(OrderDtoPost orderDtoPost, ObjectId orderId) {
+        Order order = findOrderById(orderId);
+        if (order.getDeliveryState().equals(DeliveryState.IN_PROGRESS)) {
+            for (ObjectId productId : order.getProducts()) {
+                productOrderRepository.deleteById(productId);
+            }
+            order.getProducts().clear();
+            enrichOrderWithProducts(order, orderDtoPost);
+            orderRepository.update(order);
+            return order;
+        }else {
+            throw new BadRequestException("", Response.status(Response.Status.BAD_REQUEST)
+                            .entity("\"{\"error\":\"Bad status for order\"}\"").build());
+        }
+
+    }
 
     public Order changeDeliveryState(DeliveryState deliveryState, ObjectId id) {
-
-        Optional<Order> optional = orderRepository.findByIdOptional(id);
-        Order order = optional.orElseThrow(() ->
-                new NotFoundException(id.toString(), Response.status(Response.Status.NOT_FOUND)
-                        .entity("{\"error\":\"Order Not found\"}")
-                        .build()));
+        Order order = findOrderById(id);
         switch (deliveryState) {
             case SENT:
                 if (order.getDeliveryState().equals(DeliveryState.SENT)
@@ -103,7 +96,6 @@ public class OrderService {
                break;
         }
         return order;
-
     }
 
 
@@ -126,4 +118,36 @@ public class OrderService {
         }
         order.setDeliveryState(DeliveryState.SENT);
     }
+
+    private Order findOrderById(ObjectId id) {
+        Optional<Order> optional = orderRepository.findByIdOptional(id);
+        return optional.orElseThrow(() ->
+                new NotFoundException(id.toString(), Response.status(Response.Status.NOT_FOUND)
+                        .entity("{\"error\":\"Order Not found\"}")
+                        .build()));
+    }
+
+    private void enrichOrderWithProducts(Order order, OrderDtoPost orderDtoPost) {
+        for (ProductOrderDtoPost productOrderDtoPost : orderDtoPost.getProducts()){
+            try {
+                productServiceClient.getProductById(productOrderDtoPost.getProductId());
+
+            }catch (Exception e){
+                throw new BadRequestException(e.getMessage(), Response.status(Response.Status.BAD_REQUEST)
+                        .entity("{\"error\":\"Product Not found\"}").build());
+            }
+            if (productOrderDtoPost.getQuantity() >
+                    productServiceClient.getProductById(productOrderDtoPost.getProductId()).getStock()){
+                throw new BadRequestException("", Response.status(Response.Status.BAD_REQUEST)
+                        .entity("{\"error\":\"Quantity are not available\"}").build());
+            }
+            ProductOrder productOrder = productOrderDtoPost.toProductOrder();
+            productOrder.setProductName(productServiceClient.getProductById(productOrderDtoPost.getProductId()).getName());
+            productOrderRepository.persist(productOrder);
+            order.addProduct(productOrder.id);
+        }
+    }
+
+
+
 }

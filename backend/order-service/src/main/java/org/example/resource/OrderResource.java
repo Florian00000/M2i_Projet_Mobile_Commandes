@@ -24,6 +24,14 @@ public class OrderResource {
             return Response.status(Response.Status.CREATED).entity(order).build();
     }
 
+    @PUT
+    @Path("/{id}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response updateOrder(@PathParam("id")String id, OrderDtoPost orderDtoPost) {
+        return Response.status(Response.Status.OK)
+                .entity(orderService.updateOrder(orderDtoPost, new ObjectId(id))).build();
+    }
+
     @PATCH
     @Path("/sent-order/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
