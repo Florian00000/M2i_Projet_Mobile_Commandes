@@ -16,9 +16,9 @@ import java.util.List;
 @MongoEntity(collection = "command")
 @Getter
 @Setter
+@NoArgsConstructor
 public class Order extends PanacheMongoEntity {
 
-    //private ObjectId idOder;
     private DeliveryState deliveryState;
     private DeliveryType deliveryType;
 
