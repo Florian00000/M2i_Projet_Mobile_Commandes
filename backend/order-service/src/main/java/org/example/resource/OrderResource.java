@@ -31,4 +31,18 @@ public class OrderResource {
         return Response.ok(orderService.changeDeliveryState(DeliveryState.SENT, new ObjectId(id))).build();
     }
 
+    @PATCH
+    @Path("/delivered-order/{id}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response setOrderToDeliveryDelivered(@PathParam("id")String id){
+        return Response.ok(orderService.changeDeliveryState(DeliveryState.DELIVERED, new ObjectId(id))).build();
+    }
+
+    @PATCH
+    @Path("/cancel-order/{id}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response cancelOrder(@PathParam("id")String id){
+        return Response.ok(orderService.changeDeliveryState(DeliveryState.CANCELED, new ObjectId(id))).build();
+    }
+
 }

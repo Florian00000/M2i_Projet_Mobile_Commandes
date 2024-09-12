@@ -67,19 +67,40 @@ public class OrderService {
                         .build()));
         switch (deliveryState) {
             case SENT:
-                if (order.getDeliveryState() == DeliveryState.SENT || order.getDeliveryState() == DeliveryState.DELIVERED) {
+                if (order.getDeliveryState().equals(DeliveryState.SENT)
+                        || order.getDeliveryState().equals(DeliveryState.DELIVERED)
+                        || order.getDeliveryState().equals( DeliveryState.CANCELED)) {
                     throw new BadRequestException("",
                             Response.status(Response.Status.BAD_REQUEST)
                                     .entity("\"{\"error\":\"Bad status for order\"}\"").build());
                 }
                 changeDeliveryStateToSent(order);
                 orderRepository.update(order);
-                break; case DELIVERED: order.setDeliveryState(DeliveryState.DELIVERED);
+                break;
+            case DELIVERED:
+                if (order.getDeliveryState().equals(DeliveryState.DELIVERED)
+                    ||order.getDeliveryState().equals(DeliveryState.IN_PROGRESS)
+                    || order.getDeliveryState().equals(DeliveryState.CANCELED)
+                ){
+                    throw new BadRequestException("",
+                            Response.status(Response.Status.BAD_REQUEST)
+                                    .entity("\"{\"error\":\"Bad status for order\"}\"").build());
+                }
+                order.setDeliveryState(DeliveryState.DELIVERED);
                 orderRepository.update(order);
                 break;
-//           case CANCELED:
-//
-//               break;
+           case CANCELED:
+               if (order.getDeliveryState().equals(DeliveryState.CANCELED)
+                       ||order.getDeliveryState().equals(DeliveryState.SENT)
+                       || order.getDeliveryState().equals(DeliveryState.DELIVERED)
+               ){
+                   throw new BadRequestException("",
+                           Response.status(Response.Status.BAD_REQUEST)
+                                   .entity("\"{\"error\":\"Bad status for order\"}\"").build());
+               }
+               order.setDeliveryState(DeliveryState.CANCELED);
+               orderRepository.update(order);
+               break;
         }
         return order;
 
