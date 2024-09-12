@@ -37,6 +37,18 @@ services:
     networks:
       - ms_e_shop_network
 
+#  mongo:
+#    container_name: db_mongo_ms_e_shop
+#    image: mongo:latest
+#  mongo_express:
+#    container_name: admin_mongo_ms_e_shop
+#    image: mongo-express:latest
+#    ports:
+#      - "3000:8081"
+#    environment:
+#      ME_CONFIG_MONGO_URL:
+
+
   ms_authentication_service:
     container_name: authentication-service
     build: ./authentication-service
