@@ -1,10 +1,12 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { api } from "../../util/api.backend";
+import api from "../../util/api.backend";
 import { setToken } from "../slices/authSlice";
+import { increment } from "../slices/testSlice";
 
 export const login = createAsyncThunk(
     'auth/login',
     async (credentials, {rejectWithValue, dispatch}) => {
+        console.log('coucou!')
         try {
             const token = await api.post('/auth/login', {email: 'gabitbol@mail.fr', password: '123456'})
             console.log(token)
@@ -30,5 +32,18 @@ export const register = createAsyncThunk(
 
 export const testApi = createAsyncThunk(
     'auth/testApi',
-    (arg, {rejectWithValue}) => console.log('hey')
+    async (arg, action) => {
+        console.log("hey!!!!")
+        action.dispatch(increment())
+        action.dispatch(increment())
+        try {
+            console.log('on try')
+            const response = await api.get('/test/not-authenticated')
+            if (!response) throw Error('timeout')
+            // console.log(response)
+        } catch (error) {
+            console.warn(error)
+            action.rejectWithValue(error)
+        }
+    }
 )

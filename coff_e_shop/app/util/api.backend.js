@@ -6,10 +6,11 @@ const defaultInterceptor = [
         return response.data
     },
     (error) => {
-        console.warn(e)
+        console.warn(error)
         return Promise.reject(error)
     }
 ]
 
-export const api = axios.create({baseURL: "http://10.0.2.2:8080/api"})
+const api = axios.create({baseURL: "http://10.0.2.2:8080/api", setTimeout: 1500})
 api.interceptors.response.use(...defaultInterceptor)
+export default api
