@@ -85,7 +85,7 @@ public class ProductService {
     public ProductDtoGet downStock(long id, int stock) {
         Optional<Product> product = productRepository.findByIdOptional(id);
         if (product.isPresent()) {
-            if (product.get().getStock() - stock > 0) {
+            if (product.get().getStock() - stock >= 0) {
                 product.get().setStock(product.get().getStock() - stock);
                 productRepository.persist(product.get());
                 return new ProductDtoGet(product.get());

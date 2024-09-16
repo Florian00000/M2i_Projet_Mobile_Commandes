@@ -8,7 +8,7 @@ import org.example.dto.product.ProductDtoGet;
 import org.example.dto.product.ProductDtoPost;
 import org.example.service.ProductService;
 
-@Path("/api/product")
+@Path("/api/products")
 @Produces(MediaType.APPLICATION_JSON)
 public class ProductResource {
 
@@ -64,7 +64,7 @@ public class ProductResource {
     }
 
     @PATCH
-    @Path("/{id}/down-Stock/{stock}")
+    @Path("/{id}/down-stock/{stock}")
     public Response downProductStock(@PathParam("id") long id, @PathParam("stock") int stock) {
         try {
             ProductDtoGet productDtoGet = productService.downStock(id, stock);
